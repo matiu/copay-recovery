@@ -18,9 +18,9 @@ export class RecoveryService {
   public PATHS: Object;
 
   public apiURI = {
-    'btc/livenet': 'https://insight.bitpay.com/api/',
-    'btc/testnet': 'https://test-insight.bitpay.com/api/',
-    'bch/livenet': 'http://blockdozer.com/insight-api/',
+    'livenet/btc': 'https://insight.bitpay.com/api/',
+    'testnet/btc': 'https://test-insight.bitpay.com/api/',
+    'livenet/bch': 'http://blockdozer.com/insight-api/',
   };
 
 
@@ -30,7 +30,7 @@ export class RecoveryService {
       'BIP44': {
         'testnet': ["m/44'/1'/0'/0", "m/44'/1'/0'/1"],
         'livenet': ["m/44'/0'/0'/0", "m/44'/0'/0'/1"],
-        'bch/livenet': ["m/44'/0'/0'/0", "m/44'/0'/0'/1"]
+        'livenet/bch': ["m/44'/0'/0'/0", "m/44'/0'/0'/1"]
       },
     }
   }

@@ -59,7 +59,7 @@
           <div class="form-group col-sm-6">
             <label for="chain">Chain</label>
             <select class="form-control" id="chain" name="chain" [(ngModel)]="chain">
-            <option *ngFor="let chain of availableChains" [ngValue]="chain">{{chain}}</option>
+            <option *ngFor="let chain of availableChains" [ngValue]="chain.uri">{{chain.label}}</option>
           </select>
           </div>
 
